@@ -1,0 +1,23 @@
+{
+  "name": "Мир Подшипников",
+  "short_name": "Мир Подшипников",
+  "description": "Авторизованный дистрибьютор подшипников в Пензе с 2007 года. SKF, FAG, TIMKEN, NSK и другие бренды.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "lang": "ru",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "shopping"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false
+}

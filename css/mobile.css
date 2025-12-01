@@ -1,0 +1,528 @@
+/* ===================================================================
+   MOBILE STYLES - Мир Подшипников
+   Адаптивная верстка для мобильных устройств
+   =================================================================== */
+
+/* ===================================================================
+   GLOBAL - Fix horizontal scroll
+   =================================================================== */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* ===================================================================
+   CONTAINER - Mobile (max-width: 360px)
+   =================================================================== */
+@media (max-width: 360px) {
+    .container {
+        padding-inline: 16px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 361px) {
+    .container {
+        padding-inline: 20px;
+    }
+}
+
+/* ===================================================================
+   HEADER - Mobile (max-width: 360px)
+   =================================================================== */
+@media (max-width: 360px) {
+    /* Header Top Bar */
+    .header-top {
+        padding: 6px 0;
+    }
+
+    .header-top-inner {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header-contacts {
+        gap: 8px;
+    }
+
+    .header-phone {
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .header-phone svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header-phone-secondary {
+        display: none;
+    }
+
+    .header-schedule {
+        display: none;
+    }
+
+    .header-messengers {
+        gap: 8px;
+    }
+
+    .messenger-link {
+        width: 32px;
+        height: 32px;
+    }
+
+    .messenger-link svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Header Main */
+    .header-main {
+        padding: 12px 0;
+    }
+
+    .header-main-inner {
+        justify-content: space-between;
+    }
+
+    /* Logo - BIGGER */
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .logo-title {
+        font-size: 18px;
+    }
+
+    .logo-subtitle {
+        font-size: 11px;
+    }
+
+    /* Burger */
+    .burger {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Hide shop button */
+    .btn-shop {
+        display: none;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        max-width: 280px;
+    }
+
+    .mobile-menu-inner {
+        padding: 80px 16px 24px;
+    }
+
+    .mobile-nav a {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .mobile-phone {
+        font-size: 18px;
+    }
+}
+
+/* ===================================================================
+   HEADER - Mobile (max-width: 480px, above 360px)
+   =================================================================== */
+@media (max-width: 480px) and (min-width: 361px) {
+    .header-top {
+        padding: 8px 0;
+    }
+
+    .header-phone {
+        font-size: 13px;
+    }
+
+    .header-phone-secondary {
+        display: none;
+    }
+
+    .header-schedule {
+        display: none;
+    }
+
+    .messenger-link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-main {
+        padding: 12px 0;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-title {
+        font-size: 16px;
+    }
+
+    .logo-subtitle {
+        font-size: 11px;
+    }
+
+    .btn-shop {
+        display: none;
+    }
+
+    .mobile-menu {
+        max-width: 320px;
+    }
+
+    .mobile-menu-inner {
+        padding: 80px 20px 24px;
+    }
+}
+
+/* ===================================================================
+   HEADER - Tablet (max-width: 768px, above 480px)
+   =================================================================== */
+@media (max-width: 768px) and (min-width: 481px) {
+    .header-phone-secondary {
+        display: none;
+    }
+
+    .header-schedule {
+        display: none;
+    }
+
+    .btn-shop {
+        display: none;
+    }
+}
+
+/* ===================================================================
+   HEADER - Small laptops (max-width: 1024px, above 768px)
+   =================================================================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* ===================================================================
+   HERO SECTION - Mobile (max-width: 360px)
+   =================================================================== */
+@media (max-width: 360px) {
+    /* Hero container - increased padding for header */
+    .hero {
+        min-height: auto;
+        padding: 110px 0 28px;
+    }
+
+    /* Hero content grid - single column */
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* Hero Text - CENTERED */
+    .hero-text {
+        text-align: center;
+    }
+
+    /* Hide visual on small screens */
+    .hero-visual {
+        display: none;
+    }
+
+    /* Hero Badge - centered */
+    .hero-badge {
+        padding: 6px 14px;
+        font-size: 11px;
+        gap: 8px;
+        margin-bottom: 38px;
+        margin-inline: auto;
+    }
+
+    .hero-badge .badge-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .hero-badge .badge-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Hero Title */
+    .hero-title {
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    .hero-title-accent {
+        font-size: xxx-large;
+    }
+
+    .hero-title-city {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    /* Hero Description - centered */
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        margin-inline: auto;
+        max-width: 100%;
+    }
+
+    /* Hero Actions (Buttons) */
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .hero-actions .btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Hero Stats - centered */
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding-top: 24px;
+        justify-content: center;
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .stat-value {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .stat-label {
+        font-size: 9px;
+        margin-top: 6px;
+        letter-spacing: 0.03em;
+    }
+
+    /* Hide scroll indicator */
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* ===================================================================
+   HERO SECTION - Mobile (max-width: 480px, above 360px)
+   =================================================================== */
+@media (max-width: 480px) and (min-width: 361px) {
+    .hero {
+        min-height: auto;
+        padding: 115px 0 32px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hero Text - CENTERED */
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-badge {
+        padding: 8px 14px;
+        font-size: 11px;
+        gap: 8px;
+        margin-bottom: 20px;
+        margin-inline: auto;
+    }
+
+    .hero-badge .badge-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    .hero-title-city {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        margin-inline: auto;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding-top: 24px;
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .stat-value {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* ===================================================================
+   HERO SECTION - Tablet (max-width: 768px, above 480px)
+   =================================================================== */
+@media (max-width: 768px) and (min-width: 481px) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-badge {
+        margin-bottom: 24px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hero-title-city {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .hero-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .hero-stats {
+        gap: 32px;
+        padding-top: 28px;
+    }
+
+    .stat-value {
+        font-size: 28px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* ===================================================================
+   HERO SECTION - Small laptops (max-width: 1024px, above 768px)
+   =================================================================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .hero {
+        padding: 120px 0 48px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+}
+
+/* ===================================================================
+   TODO: Other sections will be added step by step
+   - Header
+   - About
+   - Catalog
+   - Brands
+   - Advantages
+   - Wholesale
+   - Request
+   - Contacts
+   - Footer
+   =================================================================== */

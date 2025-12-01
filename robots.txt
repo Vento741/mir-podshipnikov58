@@ -1,0 +1,36 @@
+# Robots.txt for мир-подшипников58.рф
+# https://мир-подшипников58.рф/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://мир-подшипников58.рф/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin and system paths (if any)
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Yandex specific
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Host directive for Yandex
+Host: https://мир-подшипников58.рф
