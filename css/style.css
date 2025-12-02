@@ -437,7 +437,7 @@ address {
 }
 
 .section-title {
-    font-family: var(--font-display);
+    font-family: var(--font-primary);
     font-size: var(--text-4xl);
     font-weight: 700;
     line-height: 1.2;
@@ -452,7 +452,7 @@ address {
 }
 
 .text-accent {
-    color: var(--accent-400);
+    color: var(--facade-blue-light);
 }
 
 .section-header-center {
@@ -738,6 +738,12 @@ address {
     color: var(--facade-blue-light);
     transition: all var(--transition-base);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .logo:hover .logo-icon {
@@ -1320,15 +1326,13 @@ address {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg,
-        rgba(59, 111, 160, 0.15) 0%,
-        rgba(30, 43, 58, 0.8) 50%,
-        rgba(59, 111, 160, 0.15) 100%
-    );
+    rgb(12 24 35) 0%,
+    rgb(14 30 49) 50%,
+    rgb(14 27 39) 100%);
     border: 2px solid rgba(59, 111, 160, 0.3);
-    border-radius: var(--radius-xl);
-    box-shadow:
-        inset 0 2px 20px rgba(0, 0, 0, 0.3),
-        0 8px 32px rgba(0, 0, 0, 0.3);
+    /* border-radius: var(--radius-xl); */
+    box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.3), 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: hero-logo-float 8s ease-in-out infinite;
 }
 
 /* Corner accents like facade panels */
@@ -1340,7 +1344,8 @@ address {
     right: var(--space-4);
     bottom: var(--space-4);
     border: 1px solid rgba(59, 111, 160, 0.2);
-    border-radius: var(--radius-lg);
+    /* border-radius: var(--radius-lg); */
+    animation: hero-logo-float 8s ease-in-out infinite;
 }
 
 /* Hero Logo Image */
@@ -1694,7 +1699,7 @@ address {
 .catalog-card-icon {
     width: 64px;
     height: 64px;
-    color: var(--accent-400);
+    color: var(--facade-blue-light);
     margin-bottom: var(--space-6);
 }
 
@@ -1740,7 +1745,7 @@ address {
     gap: var(--space-2);
     font-size: var(--text-sm);
     font-weight: 600;
-    color: var(--accent-400);
+    color: var(--facade-blue-light);
     transition: all var(--transition-fast);
 }
 
@@ -1783,7 +1788,7 @@ address {
 }
 
 .brands-tier-premium .brands-tier-title {
-    color: var(--accent-600);
+    color: var(--facade-blue-light);
 }
 
 .brands-grid {
@@ -2625,7 +2630,7 @@ address {
 }
 
 .store-cta-title {
-    font-family: var(--font-display);
+    font-family: var(--font-primary);
     font-size: var(--text-4xl);
     font-weight: 700;
     margin-bottom: var(--space-4);
